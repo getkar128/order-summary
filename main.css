@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.sr-only{
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    position: absolute;
+    overflow: hidden;
+    clip: rect(0,0,0,0);
+    border: 0;
+    top: -1rem;
+}
+
+body {
+    width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: url(images/pattern-background-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    /* background-position: top 0rem right 0; */
+    background-color: hsl(225, 100%, 94%);
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+section {
+    width: 20rem;
+    height: 28rem;
+    background-color: hsl(225, 100%, 98%); 
+    border-radius: 1rem;
+}
+
+p {
+    font-size: 0.7rem;
+}
+
+h2 {
+    font-size: 1.3rem;
+    font-weight: 900;
+    padding-top: 1rem;
+    padding-bottom: 0.5rem;
+    color: hsl(223, 47%, 23%);
+}
+
+section a {
+    display: block;
+}
+
+.content {
+    padding-bottom: 1rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    line-height: 1.3rem;
+    color: hsl(224, 23%, 55%);
+}
+
+
+.hero {
+    width: 20rem;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+}
+
+.music-icon {
+    width: 2rem;
+    margin-left: 0.8rem;
+}
+
+.price_detail {
+    width: 16rem;
+    height: 3.5rem;
+    margin-bottom: 2rem;
+    display: flex;
+    align-items: center;
+    margin-left: 2rem;
+    background-color: hsl(225, 100%, 94%, 0.5);
+    border-radius: 0.5rem;
+}
+
+.price {
+    padding-left: 0.5rem;
+    line-height: 1rem;
+}
+
+.price p{
+    font-size: 0.7rem;
+    color: hsl(224, 23%, 55%);
+}
+
+span {
+    font-weight: 900;
+    color: hsl(223, 47%, 23%);
+}
+
+.change {
+    padding-left: 4.5rem;
+    font-size: 0.8rem;
+    font-weight: 700;
+    color: hsl(245, 75%, 52%);
+    transition: all 0.3s ease-in-out;
+}
+
+.change:visited {
+    color: hsl(245, 75%, 52%);
+}
+
+.change:hover {
+    color: hsla(245, 75%, 52%, 0.5);
+}
+
+.btn {
+    width: 16rem;
+    height: 2rem;
+    margin: 0.8rem 2rem;
+    font-size: 0.7rem;
+    padding: 0.5rem;
+    background-color: hsl(245, 75%, 52%);
+    border-radius: 0.5rem;
+    color: hsl(225, 100%, 98%);
+    text-decoration: none;
+    transition: all 0.3s ease-out;
+}
+
+.btn:hover {
+    background-color: hsl(245, 75%, 52%, 0.5);
+}
+
+.cancel {
+    color: hsl(224, 23%, 55%);
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 0.7rem;
+    transition: all 0.3s ease-out;
+}
+
+
+.cancel:visited  {
+    color: hsl(224, 23%, 55%);
+}
+
+.cancel:hover {
+    color: hsl(223, 47%, 23%);
+}
+
+@media screen and (max-width: 70rem) {
+    body {
+        background-image: url(images/pattern-background-mobile.svg);
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+}
+
+
+footer {
+    position: fixed;
+    bottom: 0;
+}
+
+.attribution {
+    font-size: 11px; text-align: center;
+}
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
